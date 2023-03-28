@@ -513,6 +513,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif data.startswith("notify_user_not_avail"):
         _, user_id, movie = data.split(":")
+        data = query.data
         # Send message to user
         try:
             btn = [[
@@ -541,6 +542,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif data.startswith("notify_user_alrupl"):
         _, user_id, movie = data.split(":")
+        data = query.data
         # Send message to user
         try:
             btn = [[
@@ -567,6 +569,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif data.startswith("notify_userupl"):
         _, user_id, movie = data.split(":")
+        data = query.data
         # Send message to user
         try:
             btn = [[
@@ -594,6 +597,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif data.startswith("notify_user_req_rejected"):
         _, user_id, movie = data.split(":")
+        data = query.data
         # Send message to user
         try:
             btn = [[
@@ -620,6 +624,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif data.startswith("notify_user_spelling_error"):
         _, user_id, movie = data.split(":")
+        data = query.data
         # Send message to user
         try:
             btn = [[
